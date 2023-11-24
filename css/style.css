@@ -1,0 +1,749 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+:root{
+    --text-color: #252B42;
+    --second-text-color: #737373;
+    --light-text-color: #FFF;
+    --primary-color: #FFA62B;
+    --secondary-color-1: #00A0C1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAFAFA;
+}
+header{
+    padding: 12px 200px;
+    max-width: 100vw;
+    height: 58px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+nav h5{
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+a{
+    text-decoration: none;
+}
+.nav-links a{
+    color: var(--second-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    transition: 0.7s;
+    &:hover{
+        color: var(--text-color);
+    }
+}
+.hero-section{
+    background-image: url(../images/cover.png);
+    height: 630px;
+    padding: 0 200px;
+}
+.hero-section h1{
+    padding-top: 104px;
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+}
+.hero-section h5{
+    color: var(--second-text-color);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.hero-buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.hero-buttons button{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding: 10px 36px;
+    border-radius: 37px;
+}
+.hero-button1{
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    color: var(--light-text-color);
+    &:hover{
+        background-color: inherit;
+        color: var(--primary-color);
+    }
+}
+.hero-button2{
+    background: inherit;
+    border: 1px solid var(--secondary-color-1);
+    cursor: pointer;
+    color: var(--secondary-color-1);
+    &:hover{
+        background-color: var(--secondary-color-1);
+        color: var(--light-text-color);
+    }
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+.card{
+    display: flex;
+    width: 328px;
+    height: 210px;
+    padding: 35px 20px 35px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: #FFF;
+    color: var(--text-color);
+    fill: var(--secondary-color-1);
+    transition: 0.5s;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+    &:hover{
+        background-color: var(--secondary-color-1);
+        color: var(--light-text-color);
+        fill: var(--light-text-color);
+    }
+}
+.card h3{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    padding-top: 10px;
+}
+.card p{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+.card svg:hover{
+    fill: var(--light-text-color);
+}
+#about-section{
+    margin-top: 242px;
+    max-width: 100vw;
+}
+.hortayozuv{
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.portayozuv{
+    color: var(--second-text-color);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 47px;
+    letter-spacing: 0.2px;
+}
+.about-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+.about-card{
+    display: flex;
+    width: 230px;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 209px;
+    background: #FFF;
+    transition: 0.5s;
+    margin-bottom: 205px;
+    &:hover{
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+.about-card h2{
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+.about-card h5{
+    color: var(--second-text-color);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+}
+.firstabout{
+    padding-top: 17px;
+}
+#advice-section{
+    padding-bottom: 101px;
+}
+.advice-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.advice-card{
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    width: 232px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    height: 183px;
+    background-color: #FFF;
+}
+.advice-card h5{
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.advice-card p{
+    color: var(--second-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+#service-section{
+    background: #FFF;
+    padding-top: 100px;
+    height: 911px;
+    padding-left: 200px;
+    padding-right: 300px;
+}
+.tags{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tags h2{
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+.tags p{
+    padding-top: 10px;
+    color: var(--second-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    padding-bottom: 20px;
+}
+.skorost{
+    display: flex;
+
+}
+.skorost h5{
+    padding-top: 30px;
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    padding-left: 20px;
+}
+.skorost h6{
+    padding-left: 20px;
+    color: var(--second-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    padding-top: 5px;
+}
+.logo-section{
+    padding: 75px 230px 0 230px;
+    height: 404px;
+}
+.logos{
+    padding-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputss{
+    display: flex;
+    width: 1050px;
+    padding: 30px 50px;
+    justify-content: space-between;
+    border-radius: 2px;
+    background: var(--secondary-color-2, #16697A);
+}
+.inputss h3{
+    color: var(--light-text-color);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+input{
+    outline: none;
+}
+.forms input{
+    border: 1px solid #F9F9F9;
+    display: flex;
+    width: 450px;
+    padding-left: 20px;
+    height: 58px;
+    align-items: center;
+    border-radius: 5px;
+    background: #F9F9F9;
+}
+.forms button{
+    display: flex;
+    width: 117px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #E6E6E6;
+    background: var(--primary-color);
+    position: absolute;
+    top: 3263px;
+    right: 289px;
+    cursor: pointer;
+}
+#contact-section{
+    height: 808px;
+    padding-top: 80px;
+    background: #F3F3F3;
+}
+input::placeholder,textarea::placeholder{
+    color: var(--second-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+.contact-cards{
+    margin-top: 35px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact-card{
+    height: 333px;
+    display: flex;
+    width: 328px;
+    padding: 50px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #FFF;
+    color: var(--text-color);
+    fill: var(--secondary-color-1);
+    transition: 0.4s;
+    &:hover{
+        background-color: #252B42;
+        color: #FFF;
+        fill: var(--light-text-color);
+    }
+}
+.contact-card h6{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.contact-card h5{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.contact-card button{
+    cursor: pointer;
+    width: 160px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    background: transparent;
+}
+.aboutyou{
+    padding: 100px 240px;
+    height: 751px;
+    background: #FAFAFA;
+}
+.aboutyou input[type="text"],.amail,input[type="tel"]{
+    width: 1050px;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+}
+textarea{
+    padding: 12px 20px;
+    outline: none;
+    width: 1050px;
+    height: 156px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 20px;
+}
+.aboutyou button{
+    width: 163px;
+    height: 58px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--light-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    margin: 37px 443px;
+    cursor: pointer;
+}
+footer{
+    height: 307px;
+    background: #16697A;
+    padding: 0 210px;
+}
+.foot-yozuvlar{
+    display: flex;
+    justify-content: space-between;
+}
+.foot-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+a{
+    text-decoration: none;
+}
+.foot-links h5{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: var(--light-text-color);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.foot-links a{
+    color: var(--light-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.engohiri{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAFAFA;
+    height: 68px;
+    padding: 0 200px;
+}
+.sossaytlar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.engohiri h6{
+    color: var(--second-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+#navbar-responsive.open {
+    left: 0;
+}
+  
+.menu-btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    display: none;
+}
+  
+.menu-btn span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+
+  /* MEDIA QUERIES */
+@media (max-width: 768px) {
+    #navbar-responsive {
+      position: fixed;
+      top: 58px;
+      bottom: 0;
+      left: -100%;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ccc;
+      transition: 0.5s;
+    }
+    header{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .menu-btn {
+      display: flex;
+    }
+    .hero-section{
+        background-image: url(../images/cover3.png);
+        height: 1365px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .hero-section h1{
+        padding-top: 30px;
+        text-align: center;
+    }
+    .hero-section h5{
+        margin-left: 200px;
+        text-align: center;
+        max-width: 279px;
+    }
+    .hero-buttons{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .portayozuv{
+        margin-left: 270px;
+        max-width: 225px;
+    }
+    .about-cards{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tepaga{
+        margin-top: -180px;
+    }
+    .advice-cards{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 168px;
+    }
+    .rasmlar{
+        margin-top: -1050px;
+    }
+    .ikki{
+        margin-top: 38px;
+    }
+    .uch{
+        margin-top: 42px;
+    }
+    .tort{
+        margin-top: 41px;
+    }
+    .business{
+        text-align: center;
+        max-width: 225px;
+        padding-bottom: 45px;
+    }
+    .tags{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .tags h2{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .tags p{
+        text-align: center;
+    }
+    #service-section{
+        padding-top: 100px;
+        padding-left: 1px;
+        padding-right: 1px;
+        height: 1500px;
+    }
+    .contact-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .skorost h5{
+        max-width: 350px;
+    }
+    .logo-section{
+        height: 1250px;
+        padding: 0;
+        padding-top: 50px;
+    }
+    .logos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .inputss{
+        margin-top: 100px;
+        width: 768px;
+        height: 215px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .inputss h3{
+        text-align: center;
+    }
+    .forms input{
+        width: 435px;
+    }
+    .forms button{
+        top: 7278px;
+        right: 167px;
+    }
+    #contact-section{
+        height: 1530px;
+    }
+    .aboutyou{
+        display: none;
+    }
+    footer{
+        height: 1200px;
+    }
+    .foot-yozuvlar{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .engohiri{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        height: 200px;
+        padding-bottom: 20px;
+    }
+    .engohiri h6{
+        padding-top: 25px;
+        max-width: 235px;
+    }
+}
